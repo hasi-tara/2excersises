@@ -5,8 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="to-do-list/styles.css">
 </head>
 <body>
-    <script src="clone.js"></script>
+    <div class="container">
+        <div class="todo-app">
+            <div class="row">
+                <input type="text" id="input" placeholder="Add a to-do...">
+                <button onclick="adding()">&#65291;
+                </button>
+            </div>
+            <h2>
+                <img class="write" src="to-do-list/images/Bina-pencil-violet.svg">
+                My To-Do List!
+                <img class="write" src="to-do-list/images/pinkrabbit.svg">
+            </h2>
+            <ul id="u-list">
+            </ul>
+        </div>
+    </div>
+    <script src="to-do-list/script.js"></script>
 </body>
 </html>
