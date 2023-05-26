@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="to-do-list/styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="to-do-list/styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="todo-app">
-            <div class="row">
-                <input type="text" id="input" placeholder="Add a to-do...">
-                <button onclick="adding()">&#65291;
-                </button>
-            </div>
-            <h2>
-                <img class="write" src="to-do-list/images/Bina-pencil-violet.svg">
-                My To-Do List!
-                <img class="write" src="to-do-list/images/pinkrabbit.svg">
-            </h2>
-            <ul id="u-list">
-            </ul>
+      <div class="todo">
+        <div class="todo__row">
+          <input class="todo__input" id="input" type="text" placeholder="Add a to-do..." />
+          <button onclick="adding()">&#65291;</button>
         </div>
+        <h2 class="todo__heading">
+          <img
+            class="todo__icon"
+            src="to-do-list/images/Bina-pencil-violet.svg"
+          />
+          My To-Do List!
+          <img 
+            class="todo__icon" 
+            src="to-do-list/images/pinkrabbit.svg" />
+        </h2>
+        <ul class="todo__list" id="u-list"></ul>
+      </div>
     </div>
     <script src="to-do-list/script.js"></script>
-</body>
+  </body>
 </html>
